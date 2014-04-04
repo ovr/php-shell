@@ -25,6 +25,13 @@ abstract class AbstractScript {
 	}
 
 	/**
+	 * Starts script.
+	 */
+	public function __invoke(<Shell> shell, array arguments = []) -> void {
+		this->run(shell, arguments);
+	}
+
+	/**
 	 * Registers streams.
 	 * @param array streams Streams. Keys are streams, values are fopen() resources
 	 * @param InputOutput io InputOutput instance
