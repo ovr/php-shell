@@ -10,7 +10,7 @@ Shell is a php extension aimed to ease creation command-line php-scripts.
 ```
 echo "extension=shell.so" > /etc/php5/conf.d/shell.ini
 ```
-## API
+## Introducing
 To make a shell script, you need:
 
 1. **Create `Shell` instance (\Shell\Shell)**.
@@ -33,7 +33,7 @@ To make a shell script, you need:
 		- `daemonize()`
 		- `isDaemonRunning(string pidFile)`
 
-### Script examples
+### Examples
 ```php
 <?php
 use \Shell\Shell;
