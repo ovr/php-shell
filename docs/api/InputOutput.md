@@ -23,12 +23,14 @@
 	<dt><tt>output</tt><big>(</big><em>string message</em><big>)</big></dt>
 	<dt><tt>error</tt><big>(</big><em>string message</em><big>)</big></dt>
 	<dd>Sends a message to:
-	- debug output stream
-	- default output stream
-	- error output stream</dd>
+	<ul>
+		<li>debug output stream</li>
+		<li>default output stream</li>
+		<li>error output stream</li>
+	</ul></dd>
 
 	<dt><tt>write</tt><big>(</big><em>string stream, string message</em><big>)</big></dt>
 	<dd>Sends a message to one of internal streams.<br />
-	If according stream is not registered, message goes to STDIN or STDERR (depending on result of `$stream == 'ERROR'`).</dd>
+	If according stream is not registered, message goes to STDIN or STDERR (depending on result of <code>$stream == 'ERROR'</code>).</dd>
 
 </dl>
