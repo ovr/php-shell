@@ -1,6 +1,6 @@
 # AbstractDaemon
 
-[AbstractScript](AbstractScript.md) > **AbstractScript**
+[**AbstractScript**](AbstractScript.md) > *AbstractScript*
 
 <dl>
   <dt><tt>daemonize</tt><big>(</big><em>callable callback</em><big>)</big></dt>
