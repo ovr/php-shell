@@ -22,7 +22,7 @@ class Curl {
 	 */
 	public function __construct() {
 		if unlikely !extension_loaded("curl") {
-			throw new DependencyException("Required extension \"curl\" is not loaded!");
+			throw new DependencyException("Required extension 'curl' is not loaded!");
 		}
 	}
 
@@ -55,7 +55,7 @@ class Curl {
 	 * @return resource Result of curl_init()
 	 */
 	public function getResource() {
-		if is_null(this->resource) {
+		if unlikely is_null(this->resource) {
 			let this->resource = curl_init();
 		}
 		return this->resource;
