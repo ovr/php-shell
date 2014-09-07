@@ -53,17 +53,7 @@ $shell->registerHandler(function (Shell $shell, array $arguments) {
 });
 ```
 
-More complex example of usage is **script.php** from https://github.com/wapmorgan/zephir-scripts.
-
-Run it one of this ways:
-```
-./script.php
-./script.php --help
-./script.php --version
-./script.php --mode=colors
-./script.php --mode=curl
-./script.php --mode=streams
-```
+More complex examples of usage are collected [here](https://github.com/wapmorgan/shell-scripts).
 
 #### Author
 Sergei Vanyushin (also known as wapmorgan)
