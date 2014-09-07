@@ -65,28 +65,47 @@ class InputOutput {
 		let this->buffer = null;
 	}
 
+	/**
+	 * Registers stream in internal streams pool.
+	 */
 	public function registerStream(string stream, resource streamResource) {
 		let this->streams[stream] = streamResource;
 	}
 
+	/**
+	 * Unregisters stream from internal streams pool.
+	 */
 	public function unregisterStream(string stream) {
 		if isset(this->streams[stream]) {
 			unset(this->streams[stream]);
 		}
 	}
 
+	/**
+	 * Sends a message to debug output stream.
+	 */
 	public function debug(string message) {
 		this->write("DEBUG", message);
 	}
 
+	/**
+	 * Sends a message to default output stream.
+	 */
 	public function output(string message) {
 		this->write("OUTPUT", message);
 	}
 
+	/**
+	 * Sends a message to error output stream.
+	 */
 	public function error(string message) {
 		this->write("ERROR", message);
 	}
 
+	/**
+	 * Sends a message to one of internal streams.
+	 * If according stream is not registered, message goes to STDIN or STDERR (depending on result of `$stream == 'ERROR'`).
+	 */
 	public function write(string stream, string message) {
 		var streamResource;
 		if fetch streamResource, this->streams[stream] {
