@@ -56,19 +56,19 @@ $shell->registerHandler(function (Shell $shell, array $arguments) {
 More complex examples of usage are collected [here](https://github.com/wapmorgan/shell-scripts).
 
 #### API
-1. [AbstractDaemon](docs/api/AbstractDaemon.html)
-2. [AbstractScript](docs/api/AbstractScript.html)
-3. [Curl](docs/api/Curl.html)
-4. [CurlSettingsContainer](docs/api/CurlSettingsContainer.html)
-5. [DependencyException](docs/api/DependencyException.html)
-6. [FlagOption](docs/api/FlagOption.html)
-7. [InputOutput](docs/api/InputOutput.html)
-8. [MultiValueOption](docs/api/MultiValueOption.html)
-9. [NotImplementedException](docs/api/NotImplementedException.html)
-10. [Shell](docs/api/Shell.html)
-11. [ShellException](docs/api/ShellException.html)
-12. [StringOption](docs/api/StringOption.html)
-13. [SwitchOption](docs/api/SwitchOption.html)
+1. [AbstractDaemon](docs/api/AbstractDaemon.md)
+2. [AbstractScript](docs/api/AbstractScript.md)
+3. [Curl](docs/api/Curl.md)
+4. [CurlSettingsContainer](docs/api/CurlSettingsContainer.md)
+5. [DependencyException](docs/api/DependencyException.md)
+6. [FlagOption](docs/api/FlagOption.md)
+7. [InputOutput](docs/api/InputOutput.md)
+8. [MultiValueOption](docs/api/MultiValueOption.md)
+9. [NotImplementedException](docs/api/NotImplementedException.md)
+10. [Shell](docs/api/Shell.md)
+11. [ShellException](docs/api/ShellException.md)
+12. [StringOption](docs/api/StringOption.md)
+13. [SwitchOption](docs/api/SwitchOption.md)
 
 #### Author
 Sergei Vanyushin (also known as wapmorgan)
