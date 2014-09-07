@@ -65,8 +65,8 @@ class InputOutput {
 		let this->buffer = null;
 	}
 
-	public function registerStream(string stream, resource) {
-		let this->streams[stream] = resource;
+	public function registerStream(string stream, resource streamResource) {
+		let this->streams[stream] = streamResource;
 	}
 
 	public function unregisterStream(string stream) {
