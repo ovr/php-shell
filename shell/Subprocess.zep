@@ -15,16 +15,16 @@ class Subprocess {
 	/**
 	 * Runs a system command.
 	 */
-	static public function call(string! args, resource stdin = fopen("php://memory", "r"), resource stdout = null, resource stderr = null, shell = false) -> int {
+	static public function call(string! args, stdin = null, stdout = null, stderr = null, shell = false) -> int {
 		var proc;
 		array pipes = [];
-		if is_null(stdin) {
+		if is_null(stdin) || !is_resource(stdin) {
 			let stdin = ["pipe", "r"];
 		}
-		if is_null(stdout) {
+		if is_null(stdout) || !is_resource(stdout) {
 			let stdout = ["pipe", "w"];
 		}
-		if is_null(stderr) {
+		if is_null(stderr) || !is_resource(stderr) {
 			let stderr = ["pipe", "w"];
 		}
 
@@ -33,6 +33,9 @@ class Subprocess {
 			1: stdout,
 			2: stderr
 		], pipes);
+		if proc == false {
+			return -2;
+		}
 		return proc_close(proc);
 	}
 }
