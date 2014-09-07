@@ -1,6 +1,6 @@
 # AbstractScript
 
-**AbstractScript**
+*AbstractScript*
 
 <dl>
   <dt><tt>run</tt><big>(</big><em>Shell shell, array arguments</em><big>)</big></dt>
