@@ -12,7 +12,7 @@ namespace Shell;
  * Class Curl.
  */
 class Curl {
-	private resource;
+	private curlResource;
 	private settingsContainer;
 	private static instances;
 
@@ -31,8 +31,8 @@ class Curl {
 	 * Frees memory of opened curl resource.
 	 */
 	public function __destruct() {
-		if is_resource(this->resource) {
-			curl_close(this->resource);
+		if is_resource(this->curlResource) {
+			curl_close(this->curlResource);
 		}
 	}
 
@@ -55,10 +55,10 @@ class Curl {
 	 * @return resource Result of curl_init()
 	 */
 	public function getResource() {
-		if unlikely is_null(this->resource) {
-			let this->resource = curl_init();
+		if unlikely is_null(this->curlResource) {
+			let this->curlResource = curl_init();
 		}
-		return this->resource;
+		return this->curlResource;
 	}
 
 	/**
