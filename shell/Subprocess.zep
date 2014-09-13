@@ -94,8 +94,12 @@ class Subprocess {
 	 * Wait for child process to terminate. Set and return returnCode attribute.
 	 */
 	public function wait() -> int {
-		proc_terminate(this->process);
 		var status; let status = proc_get_status(this->process);
+		while (status["running"])
+		{
+			sleep(1);
+			let status = proc_get_status(this->process);
+		}
 		this->close();
 		let this->returnCode = (int)status["exitcode"];
 		return (int)status["exitcode"];
@@ -105,31 +109,30 @@ class Subprocess {
 	 * Interact with process: Send data to stdin. Read data from stdout and stderr, until end-of-file is reached. Wait for process to terminate. The optional input argument should be a string to be sent to the child process, or None, if no data should be sent to the child.
 	 */
 	public function communicate(string input = null) -> array {
-		// int pos = ftell(this->stdin);
 		fwrite(this->stdin, input);
-		// fseek(this->stdin, pos);
+		fclose(this->stdin);
 		var buffer;
 		var output = [null, null];
 		while (!feof(this->stdout)) {
-			let buffer = fgetc(this->stdout);
-			var_dump("buffer: ", buffer);
-			if buffer === false {
+			let buffer = fread(this->stdout, 8192);
+			if buffer->length === 0 {
+				var_dump("debug: eof of stdout reached");
 				break;
-			} else {
-				let output[0] .= buffer;
 			}
+			let output[0] .= buffer;
 		}
-		var_dump("after loop:", output[0]);
+
 
 		while (!feof(this->stderr)) {
-			let buffer = fgetc(this->stderr);
-			if buffer === false {
+			let buffer = fread(this->stderr, 8192);
+			if buffer->length === 0 {
+				var_dump("debug: eof of stderr reached");
 				break;
-			} else {
-				let output[1] .= buffer;
 			}
+			let output[1] .= buffer;
 		}
-		//var_dump(!feof(this->stdout), fread(this->stdout, 8192));
+		this->close();
+		var_dump(output);
 		return output;
 	}
 
@@ -154,6 +157,9 @@ class Subprocess {
 		proc_terminate(this->process, PosixSignals::SIGKILL);
 	}
 
+	/**
+	 * Closes process on destruction
+	 */
 	public function __destruct() {
 		if is_null(this->returnCode) {
 			this->close();
