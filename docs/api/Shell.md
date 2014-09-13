@@ -21,11 +21,11 @@
 
   <dt><tt>background</tt><big>(</big><em>string text, string color</em><big>)</big></dt>
   <dd>Sets background color for text.<br />
-  This method does not colorize text unless `useColors` property is set to true (default).</dd>
+  This method does not colorize text unless <code>useColors</code> property is set to true (default).</dd>
 
   <dt><tt>printOptionsList</tt><big>(</big><em>shortAliasColumnWidth = 4, longAliasColumnWidth = 20</em><big>)</big></dt>
   <dd>Prints options list.</dd>
 
   <dt><tt>getIO</tt><big>()</big></dt>
-  <dd>Provides access to [InputOutput](InputOutput.md) object.</dd>
+  <dd>Provides access to <a href="InputOutput.md">InputOutput</a> object.</dd>
 </dl>
