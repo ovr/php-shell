@@ -51,12 +51,9 @@ class Subprocess {
 	/**
 	 * Creates a subprocess object
 	 */
-	static public function popen(string! args) -> <Subprocess> {
-		var process;
-		let process = new self,
-			process->args = args;
-		process->start();
-		return process;
+	public function __construct(string! args){
+		let this->args = args;
+		this->start();
 	}
 
 	/**
