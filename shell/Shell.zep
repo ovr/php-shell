@@ -248,4 +248,18 @@ class Shell {
 		}
 		return this->io;
 	}
+
+	/**
+	 * Daemonizes callable object.
+	 */
+	public function doBackgroundWork(callback, array params = []) {
+		var child_pid;
+		let child_pid = pcntl_fork();
+		if child_pid > 0 {
+			return;
+		} else {
+			call_user_func(callback, params);
+			exit();
+		}
+	}
 }
