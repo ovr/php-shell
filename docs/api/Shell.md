@@ -28,4 +28,6 @@
 
   <dt><tt>getIO</tt><big>()</big></dt>
   <dd>Provides access to <a href="InputOutput.md">InputOutput</a> object.</dd>
+
+  <dt><tt>doBackgroundWork</tt><big>(</big><em>callback, array params = []</em><big>)</big></dt>
 </dl>
