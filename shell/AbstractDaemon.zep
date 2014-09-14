@@ -15,17 +15,12 @@ abstract class AbstractDaemon extends AbstractScript {
 
 	/**
 	 * Daemonizes current script.
-	 * @param callable callback Parent thread callback.
 	 */
-	protected function daemonize(callback) -> void {
-		if unlikely !is_callable(callback) {
-			throw new \InvalidArgumentException("Value ".callback." (".gettype(callback).") is not a valid callable thing.");
-		}
-
+	protected function daemonize() -> void {
 		var child_pid;
 		let child_pid = pcntl_fork();
 		if child_pid > 0 {
-			call_user_func(callback);
+			exit(0);
 		}
 		posix_setsid();
 	}
