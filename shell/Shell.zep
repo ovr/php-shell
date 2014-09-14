@@ -240,7 +240,7 @@ class Shell {
 
 	/**
 	 * Provides access to InputOutput object.
-	 * @return InputOutput an InputOutput instance
+	 * @return InputOutput an InputOutput instance.
 	 */
 	public function getIO() -> <InputOutput> {
 		if this->io === null {
