@@ -17,5 +17,4 @@ make && sudo make install
 
 # zephir
 cd ..
-sudo ./install
-sudo ln -s /usr/local/src/zephir/bin/zephir /usr/local/bin
+sudo ./install -c
