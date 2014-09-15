@@ -2,6 +2,7 @@ language: php
 php:
 - 5.4
 - 5.5
+- 5.6
 - hhvm
 
 env:
@@ -10,9 +11,6 @@ env:
     - JSON_C_VER=0.12
     - ZEPHIR_VER=0.4.1
     - ZEPHIRDIR=/usr/local/src/zephir
-  matrix:
-    - ES_REQUIRE=dev
-    - ES_REQUIRE=no-dev
 
 before_script:
   - ./unit-tests/ci/install_json-c.sh
