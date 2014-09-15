@@ -15,7 +15,8 @@ env:
 before_script:
   - ./unit-tests/ci/install_zephir.sh
   - zephir compile
-  - (cd ext; export CFLAGS="-g3 -O1 -std=gnu90 -Wall"; phpize && ./configure --enable-shell && make --silent -j4 && sudo make --silent install && phpenv config-add ../unit-tests/ci/shell.ini)
+  - zephir install
+  - phpenv config-add ./unit-tests/ci/shell.ini
 
 after_script:
   - ./unit-tests/ci/show_logs.sh
