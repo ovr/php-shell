@@ -20,3 +20,6 @@ before_script:
 
 after_script:
   - ./unit-tests/ci/show_logs.sh
+
+after_failure:
+  - ./unit-tests/ci/show_logs.sh
