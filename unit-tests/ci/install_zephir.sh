@@ -7,5 +7,15 @@ sudo chown $USER $d
 git clone https://github.com/phalcon/zephir.git $d
 cd $d
 git checkout ${ZEPHIR_VER}
+git submodule update --init
+
+# json-c
+cd json-c
+sh autogen.sh
+./configure
+make && sudo make install
+
+# zephir
+cd ..
 sudo ./install
 sudo ln -s /usr/local/src/zephir/bin/zephir /usr/local/bin
