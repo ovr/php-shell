@@ -1,6 +1,9 @@
 Shell Zephir extension
 ---
 [![Build Status](https://travis-ci.org/wapmorgan/php-shell.svg)](http://travis-ci.org/wapmorgan/php-shell)
+[![Latest Stable Version](https://poser.pugx.org/wapmorgan/php-shell/v/stable.png)](https://packagist.org/packages/wapmorgan/php-shell)
+[![Total Downloads](https://poser.pugx.org/wapmorgan/php-shell/downloads.png)](https://packagist.org/packages/wapmorgan/php-shell)
+[![License](https://poser.pugx.org/wapmorgan/php-shell/license.svg)](https://packagist.org/packages/wapmorgan/php-shell)
 
 Shell is a php extension aimed to ease creation command-line php-scripts.
 
