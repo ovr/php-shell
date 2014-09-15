@@ -1,5 +1,7 @@
 Shell Zephir extension
 ---
+[![Build Status](https://travis-ci.org/wapmorgan/php-shell.svg)](http://travis-ci.org/wapmorgan/php-shell)
+
 Shell is a php extension aimed to ease creation command-line php-scripts.
 
 ### Installation:
