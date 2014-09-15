@@ -1,0 +1,13 @@
+{
+	"name": "wapmorgan/php-shell",
+	"description": "php extension aimed to create infrastructure for lightweight php console scripts.",
+	"require": {
+		"phalcon/zephir": "0.5.0"
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"bin/zephir build"
+		]
+	},
+	"license": "MIT"
+}
