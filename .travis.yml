@@ -13,7 +13,6 @@ env:
     - ZEPHIRDIR=/usr/local/src/zephir
 
 before_script:
-  - ./unit-tests/ci/install_json-c.sh
   - ./unit-tests/ci/install_zephir.sh
   - sudo zephir build
   - (cd ext; export CFLAGS="-g3 -O1 -std=gnu90 -Wall"; phpize && ./configure --enable-shell && make --silent -j4 && sudo make --silent install && phpenv config-add ../unit-tests/ci/shell.ini)
