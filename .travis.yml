@@ -9,7 +9,7 @@ env:
   global:
     - SH_VER=dev
     - JSON_C_VER=0.12
-    - ZEPHIR_VER=0.4.1
+    - ZEPHIR_VER=0.5.0
     - ZEPHIRDIR=/usr/local/src/zephir
 
 before_script:
