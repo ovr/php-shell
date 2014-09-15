@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cat elasticsearch-${ES_VER}/logs/*
+cat shell-${SH_VER}/logs/*
