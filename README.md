@@ -79,6 +79,7 @@ More complex examples of usage are collected [here](https://github.com/wapmorgan
 14. [SwitchOption](docs/api/SwitchOption.md)
 
 **\\Shell\\Workers**:
+Introduction to workers in [docs/book/workers](docs/book/workers.md).
 
 1. [Worker](docs/api/Workers_Worker.md)
 2. [WorkerContext](docs/api/Workers_WorkerContext.md)
