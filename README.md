@@ -62,6 +62,7 @@ More complex examples of usage are collected [here](https://github.com/wapmorgan
 
 #### API
 **\\Shell**:
+
 1. [AbstractDaemon](docs/api/AbstractDaemon.md)
 2. [AbstractScript](docs/api/AbstractScript.md)
 3. [Curl](docs/api/Curl.md)
@@ -78,6 +79,7 @@ More complex examples of usage are collected [here](https://github.com/wapmorgan
 14. [SwitchOption](docs/api/SwitchOption.md)
 
 **\\Shell\\Workers**:
+
 1. [Worker](docs/api/workers/Worker.md)
 2. [WorkerContext](docs/api/workers/WorkerContext.md)
 3. [WorkerState](docs/api/workers/WorkerState.md)
