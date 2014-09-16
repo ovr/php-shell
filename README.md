@@ -74,7 +74,8 @@ More complex examples of usage are collected [here](https://github.com/wapmorgan
 10. [Shell](docs/api/Shell.md)
 11. [ShellException](docs/api/ShellException.md)
 12. [StringOption](docs/api/StringOption.md)
-13. [SwitchOption](docs/api/SwitchOption.md)
+13. [Subprocess](docs/api/Subprocess.md)
+14. [SwitchOption](docs/api/SwitchOption.md)
 
 **\\Shell\\Workers**:
 1. [Worker](docs/api/workers/Worker.md)
