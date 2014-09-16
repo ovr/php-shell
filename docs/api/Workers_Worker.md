@@ -7,7 +7,7 @@
 	<dd>Worker state. Can be <code>WorkerState::FREE</code> or <code>WorkerState::RUNNING</code></dd>
 
 	<dt><tt>functionName</tt></dt>
-	<dd>Contains worker function name. <a href="WorkerContext.md">WorkerContext</a> will be passed to function.</dd>
+	<dd>Contains worker function name. <a href="Workers_WorkerContext.md">WorkerContext</a> will be passed to function.</dd>
 
 	<dt><tt>init()</tt><big>()</big></dt>
 	<dd>Checks worker function.</dd>
