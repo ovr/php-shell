@@ -1,0 +1,3 @@
+# WorkerContext
+
+**stdClass** > *WorkerContext*
