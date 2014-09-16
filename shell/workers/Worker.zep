@@ -12,9 +12,7 @@ namespace Shell\Workers;
  * Class Worker.
  */
 class Worker {
-	const RUNNING = 1;
-	const FREE = 2;
-	public state;
+	public state = WorkerState::FREE;
 	public functionName;
 	private subprocessId = 0;
 
@@ -31,7 +29,7 @@ class Worker {
 	 * Wait for working function to exit.
 	 */
 	public function finalize() {
-		var status;
+		var status = null;
 		if this->subprocessId > 0 {
 			pcntl_waitpid(this->subprocessId, status);
 		}
@@ -40,7 +38,7 @@ class Worker {
 	/**
 	 * Daemonizes worker function and lets it work.
 	 */
-	public function work(<WorkerContext> context) {
+	public function forkAndWork(<WorkerContext> context) {
 		var pid;
 		let pid = pcntl_fork();
 		if pid > 0 {

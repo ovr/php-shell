@@ -11,4 +11,4 @@ namespace Shell\Workers;
 /**
  * Container WorkerContext.
  */
-class WorkerContext extends stdClass {}
+class WorkerContext extends \stdClass {}

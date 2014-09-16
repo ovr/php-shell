@@ -21,12 +21,12 @@ class WorkersPool {
 		if unlikely !class_exists(workerClass) {
 			throw new \Exception("Worker class '". workerClass ."' is not available!");
 		}
-		if 
 		var worker;
-		while (num-- > 0)
+		while (num > 0)
 		{
 			let worker = this->newWorker(workerClass);
 			array_push(this->pool, worker);
+			let num--;
 		}
 		return true;
 	}
@@ -51,16 +51,17 @@ class WorkersPool {
 	/**
 	 * Deletes N of workers.
 	 */
-	public function delWorkers(int num) -> int {
+	public function delWorkers(int num) -> boolean {
 		var worker;
-		while (num-- > 0)
+		while (num > 0)
 		{
 			if count(this->pool) == 0 {
 				break;
 			}
 			let worker = array_pop(this->pool);
 			worker->finalize();
-			unset(worker);
+			//unset(worker);
+			let num--;
 		}
 		return true;
 	}
@@ -79,11 +80,12 @@ class WorkersPool {
 	 * Closes all workers.
 	 */
 	public function closeAll() -> void {
-		var worker;
-		for worker in this->pool {
+		var i, worker;
+		for i, worker in this->pool {
 			if worker->state === WorkerState::FREE {
 				worker->finalize();
-				unset();
+				//unset(worker);
+				unset(this->pool[i]);
 			}
 		}
 	}
@@ -96,7 +98,7 @@ class WorkersPool {
 		var worker;
 		for worker in this->pool {
 			if worker->state === WorkerState::FREE {
-				count++;
+				let count++;
 			}
 		}
 		return count;
@@ -112,7 +114,7 @@ class WorkersPool {
 			if worker->state === WorkerState::FREE {
 				let worker->state = WorkerState::RUNNING;
 				let worked = true;
-				worker->work(context);
+				worker->forkAndWork(context);
 				let worker->state = WorkerState::FREE;
 				break;
 			}
