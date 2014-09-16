@@ -83,6 +83,5 @@ More complex examples of usage are collected [here](https://github.com/wapmorgan
 3. [WorkerState](docs/api/workers/WorkerState.md)
 4. [WorkersPool](docs/api/workers/WorkersPool.md)
 
-
 #### Author
 Sergei Vanyushin (also known as wapmorgan)
