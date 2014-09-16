@@ -1,0 +1,3 @@
+# NotImplementedException
+
+**Exception** > *NotImplementedException*
