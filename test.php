@@ -9,9 +9,12 @@ $pool = new WorkersPool;
 $pool->addWorkers('Worker', 1);
 var_dump($pool->getCountWorkers(),
 	$pool->getCountFreeWorkers());
-$context = new WorkerContext;
-$context->asb = '124';
-var_dump($pool->dispatchWork($context));
+// $context = new WorkerContext;
+// $context->asb = '124';
+//var_dump($pool->dispatchWork($context));
+var_dump($pool->delWorkers(2));
+var_dump($pool->getCountWorkers(),
+	$pool->getCountFreeWorkers());
 
 class Worker extends \Shell\Workers\Worker {
 	public $functionName = 'worker';
