@@ -1,0 +1,3 @@
+# ShellException
+
+**Exception** > *ShellException*
