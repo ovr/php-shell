@@ -56,6 +56,7 @@ $shell->registerHandler(function (Shell $shell, array $arguments) {
 More complex examples of usage are collected [here](https://github.com/wapmorgan/shell-scripts).
 
 #### API
+**\\Shell**:
 1. [AbstractDaemon](docs/api/AbstractDaemon.md)
 2. [AbstractScript](docs/api/AbstractScript.md)
 3. [Curl](docs/api/Curl.md)
@@ -69,6 +70,13 @@ More complex examples of usage are collected [here](https://github.com/wapmorgan
 11. [ShellException](docs/api/ShellException.md)
 12. [StringOption](docs/api/StringOption.md)
 13. [SwitchOption](docs/api/SwitchOption.md)
+
+**\\Shell\\Workers**:
+1. [Worker](docs/api/workers/Worker.md)
+2. [WorkerContext](docs/api/workers/WorkerContext.md)
+3. [WorkerState](docs/api/workers/WorkerState.md)
+4. [WorkersPool](docs/api/workers/WorkersPool.md)
+
 
 #### Author
 Sergei Vanyushin (also known as wapmorgan)
