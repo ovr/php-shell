@@ -80,10 +80,10 @@ More complex examples of usage are collected [here](https://github.com/wapmorgan
 
 **\\Shell\\Workers**:
 
-1. [Worker](docs/api/workers/Worker.md)
-2. [WorkerContext](docs/api/workers/WorkerContext.md)
-3. [WorkerState](docs/api/workers/WorkerState.md)
-4. [WorkersPool](docs/api/workers/WorkersPool.md)
+1. [Worker](docs/api/Workers_Worker.md)
+2. [WorkerContext](docs/api/Workers_WorkerContext.md)
+3. [WorkerState](docs/api/Workers_WorkerState.md)
+4. [WorkersPool](docs/api/Workers_WorkersPool.md)
 
 #### Author
 Sergei Vanyushin (also known as wapmorgan)
