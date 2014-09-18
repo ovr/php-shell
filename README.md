@@ -1,11 +1,11 @@
-Shell Zephir extension
+Shell php module - framework for shell scripts.
 ---
 [![Build Status](https://travis-ci.org/wapmorgan/php-shell.svg)](http://travis-ci.org/wapmorgan/php-shell)
 [![Latest Stable Version](https://poser.pugx.org/wapmorgan/php-shell/v/stable.png)](https://packagist.org/packages/wapmorgan/php-shell)
 [![Total Downloads](https://poser.pugx.org/wapmorgan/php-shell/downloads.png)](https://packagist.org/packages/wapmorgan/php-shell)
 [![License](https://poser.pugx.org/wapmorgan/php-shell/license.svg)](https://packagist.org/packages/wapmorgan/php-shell)
 
-Shell is a php extension aimed to ease creation command-line php-scripts.
+Shell is a php extension aimed to ease creation command-line php scripts by providing most usable functionalities.
 
 ### Installation:
 
@@ -15,11 +15,12 @@ Shell is a php extension aimed to ease creation command-line php-scripts.
 ```
 echo "extension=shell.so" > /etc/php5/conf.d/shell.ini
 ```
+
 ## Introducing
 To make a shell script, you need:
 
 1. **Create `Shell` instance (\Shell\Shell)**.
-2. **Register handler (php function, class method or closure)**. **Possible handlers - any valid callback**, that receives `Shell` instance as the 1st argument and array containing script `arguments` as the 2nd argument.
+2. **Register handler (php function, class method or closure)**. **Possible handler - any valid callback**, that receives `Shell` instance as the 1st argument and array containing script `arguments` as the 2nd argument.
 3. **Register script options**. **Possible options types**:
 
 	|   Option class   |    cmdline example    |                             phpcode example                             |
@@ -29,7 +30,7 @@ To make a shell script, you need:
 	| StringOption     | --outputFile=/tmp/log | `new StringOption('o:outputFile', 'outputFile')`                        |
 	| SwitchOption     | --mode=streams        | `new SwitchOption('m:mode', 'mode', array('colors', 'curl', 'streams))` |
 
-4. **Write handler**. Also, you can extend **AbstractScript** or **AbstractDaemon**:
+4. **Write handler**. You can extend **AbstractScript** or **AbstractDaemon**:
 
 	* **\Shell\AbstractScript**:
 		- `run(<Shell> shell, array arguments = [])`
@@ -86,6 +87,15 @@ Introduction to workers in [docs/book/workers](docs/book/workers.md).
 2. [WorkerContext](docs/api/Workers_WorkerContext.md)
 3. [WorkerState](docs/api/Workers_WorkerState.md)
 4. [WorkersPool](docs/api/Workers_WorkersPool.md)
+
+[Full classmap listed in classmap.md](docs/api/classmap.md).
+
+#### Why should I use the `Shell`?
+Because it's faster, safer and well-documented.
+
+1. `Shell` is beeing compiled against C+ compiler, so it's fast.
+2. `Shell` is beeing checked by Zephir parser and C++ parser, so it's safe.
+3. Projects written in Zephir ain't supported by PhpDoc, so we try to make useful and simple documentation.
 
 #### Author
 Sergei Vanyushin (also known as wapmorgan)
