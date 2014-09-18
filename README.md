@@ -9,12 +9,29 @@ Shell is a php extension aimed to ease creation command-line php scripts by prov
 
 ### Installation:
 
+**For Developing:**
+
 1. Install Zephir (http://zephir-lang.com/install.html)
 2. run `zephir build`
 3. enable extension
 ```
 echo "extension=shell.so" > /etc/php5/conf.d/shell.ini
 ```
+
+**For users:**
+
+1. clone [wapmorgan@php-shell-sources](https://github.com/wapmorgan/php-shell-sources/)
+`git clone https://github.com/wapmorgan/php-shell-sources.git`
+2. phpize
+	`phpize`
+3. configure
+	`./configure`
+3. make
+	`make`
+4. install
+	`make install`
+5. enable
+	`php5enmod shell`
 
 ## Introducing
 To make a shell script, you need:
