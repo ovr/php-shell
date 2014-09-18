@@ -9,10 +9,10 @@
 	<dt><tt>functionName</tt></dt>
 	<dd>Contains worker function name. <a href="Workers_WorkerContext.md">WorkerContext</a> will be passed to function.</dd>
 
-	<dt><tt>init()</tt><big>()</big></dt>
+	<dt><tt>init</tt><big>()</big></dt>
 	<dd>Checks worker function.</dd>
 
-	<dt><tt>finalize()</tt><big>()</big></dt>
+	<dt><tt>finalize</tt><big>()</big></dt>
 	<dd>Wait for working function to exit.</dd>
 
 	<dt><tt>forkAndWork</tt><big>(</big><em>WorkerContext context</em><big>)</big></dt>
