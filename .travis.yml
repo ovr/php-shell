@@ -18,7 +18,7 @@ before_script:
   - cd ext && phpize && ./configure && make && sudo make install && phpenv config-add ../unit-tests/ci/shell.ini && cd ../
 
 script:
-  - ./unit-tests/ci/test.php
+  - php ./unit-tests/ci/test.php
 
 after_failure:
   - php -m
