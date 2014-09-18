@@ -20,8 +20,6 @@ before_script:
 script:
   - ./unit-tests/ci/test.php
 
-after_script:
-  - ./unit-tests/ci/show_logs.sh
-
 after_failure:
-  - ./unit-tests/ci/show_logs.sh
+  - php -m
+  - php --info
