@@ -1,4 +1,3 @@
-**\Shell\**
 # PosixSignals
 
 **PosixSignals**
