@@ -15,8 +15,10 @@ env:
 before_script:
   - ./unit-tests/ci/install_zephir.sh
   - zephir generate
-  - cd ext && phpize && ./configure && make && sudo make install
-  - phpenv config-add ./unit-tests/ci/shell.ini
+  - cd ext && phpize && ./configure && make && sudo make install && phpenv config-add ../unit-tests/ci/shell.ini
+
+script:
+  - ./unit-tests/ci/test.php
 
 after_script:
   - ./unit-tests/ci/show_logs.sh
