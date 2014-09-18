@@ -64,19 +64,20 @@ More complex examples of usage are collected [here](https://github.com/wapmorgan
 **\\Shell**:
 
 1. [AbstractDaemon](docs/api/AbstractDaemon.md)
-2. [AbstractScript](docs/api/AbstractScript.md)
-3. [Curl](docs/api/Curl.md)
-4. [CurlSettingsContainer](docs/api/CurlSettingsContainer.md)
-5. [DependencyException](docs/api/DependencyException.md)
-6. [FlagOption](docs/api/FlagOption.md)
-7. [InputOutput](docs/api/InputOutput.md)
-8. [MultiValueOption](docs/api/MultiValueOption.md)
-9. [NotImplementedException](docs/api/NotImplementedException.md)
-10. [Shell](docs/api/Shell.md)
-11. [ShellException](docs/api/ShellException.md)
-12. [StringOption](docs/api/StringOption.md)
-13. [Subprocess](docs/api/Subprocess.md)
-14. [SwitchOption](docs/api/SwitchOption.md)
+2. [AbstractOption](docs/api/AbstractOption.md)
+3. [AbstractScript](docs/api/AbstractScript.md)
+4. [Curl](docs/api/Curl.md)
+5. [CurlSettingsContainer](docs/api/CurlSettingsContainer.md)
+6. [DependencyException](docs/api/DependencyException.md)
+7. [FlagOption](docs/api/FlagOption.md)
+8. [InputOutput](docs/api/InputOutput.md)
+9. [MultiValueOption](docs/api/MultiValueOption.md)
+10. [NotImplementedException](docs/api/NotImplementedException.md)
+11. [Shell](docs/api/Shell.md)
+12. [ShellException](docs/api/ShellException.md)
+13. [StringOption](docs/api/StringOption.md)
+14. [Subprocess](docs/api/Subprocess.md)
+15. [SwitchOption](docs/api/SwitchOption.md)
 
 **\\Shell\\Workers**:
 Introduction to workers in [docs/book/workers](docs/book/workers.md).
