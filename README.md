@@ -1,6 +1,7 @@
 Shell php module - framework for shell scripts.
 ---
 [![Build Status](https://travis-ci.org/wapmorgan/php-shell.svg)](http://travis-ci.org/wapmorgan/php-shell)
+[![Dependency Status](https://www.versioneye.com/package/wapmorgan:php-shell/badge.png)](https://www.versioneye.com/package/wapmorgan:php-shell)
 [![Latest Stable Version](https://poser.pugx.org/wapmorgan/php-shell/v/stable.png)](https://packagist.org/packages/wapmorgan/php-shell)
 [![Total Downloads](https://poser.pugx.org/wapmorgan/php-shell/downloads.png)](https://packagist.org/packages/wapmorgan/php-shell)
 [![License](https://poser.pugx.org/wapmorgan/php-shell/license.svg)](https://packagist.org/packages/wapmorgan/php-shell)
