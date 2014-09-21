@@ -2,7 +2,7 @@
 	"name": "wapmorgan/php-shell",
 	"description": "php extension aimed to create infrastructure for lightweight php console scripts.",
 	"require": {
-		"phalcon/zephir": "0.5.0",
+		"phalcon/zephir": "0.5.1",
 		"ext-curl": "*",
 		"ext-posix": "*",
 		"ext-pcntl": "*"
