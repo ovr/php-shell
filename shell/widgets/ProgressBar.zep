@@ -19,7 +19,7 @@ class ProgressBar {
 	private arrow = ">";
 
 	/**
-	 * Constructs progress bar
+	 * Constructs progress bar.
 	 */
 	public function __construct(int! width, int! totalSteps = 100) {
 		let this->width = width;
@@ -27,7 +27,7 @@ class ProgressBar {
 	}
 
 	/**
-	 * Sets bar style
+	 * Sets bar style.
 	 */
 	public function style(string filled = "=", string unfilled = ".", string arrow = ">") -> <ProgressBar> {
 		let this->filledChar = filled,
@@ -37,7 +37,7 @@ class ProgressBar {
 	}
 
 	/**
-	 * Changes bar state
+	 * Changes bar state. If step reaches totalSteps, newline-char will be added.
 	 */
 	public function progress(int! step) {
 		int filledWidth, unfilledWidth;

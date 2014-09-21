@@ -89,6 +89,7 @@ More complex examples of usage are collected [here](https://github.com/wapmorgan
 5. [CurlSettingsContainer](docs/api/CurlSettingsContainer.md)
 6. [DependencyException](docs/api/DependencyException.md)
 7. [FlagOption](docs/api/FlagOption.md)
+8. [Formatter](docs/api/Formatter.md)
 8. [InputOutput](docs/api/InputOutput.md)
 9. [MultiValueOption](docs/api/MultiValueOption.md)
 10. [NotImplementedException](docs/api/NotImplementedException.md)
