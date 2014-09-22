@@ -112,8 +112,8 @@ Introduction to workers in [docs/book/workers](docs/book/workers.md).
 #### Why should I use the `Shell`?
 Because it's faster, safer and well-documented.
 
-1. `Shell` is beeing compiled against C+ compiler, so it's fast.
-2. `Shell` is beeing checked by Zephir parser and C++ parser, so it's safe.
+1. `Shell` is being compiled against C+ compiler, so it's fast.
+2. `Shell` is being checked by Zephir parser and C++ parser, so it's safe.
 3. Projects written in Zephir ain't supported by PhpDoc, so we try to make useful and simple documentation.
 
 #### Author
