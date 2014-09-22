@@ -6,7 +6,7 @@ Shell php module - framework for shell scripts.
 [![Total Downloads](https://poser.pugx.org/wapmorgan/php-shell/downloads.png)](https://packagist.org/packages/wapmorgan/php-shell)
 [![License](https://poser.pugx.org/wapmorgan/php-shell/license.svg)](https://packagist.org/packages/wapmorgan/php-shell)
 
-Shell is a php extension aimed to ease creation command-line php scripts by providing most usable functionalities.
+Shell is a php extension aimed to easy creation command-line php scripts by providing most usable functionalities.
 
 ### Installation:
 
